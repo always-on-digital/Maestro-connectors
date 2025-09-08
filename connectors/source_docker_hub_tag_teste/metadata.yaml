@@ -12,8 +12,7 @@ data:
       enabled: false
       packageName: airbyte-source-docker-hub-tag-teste
   connectorBuildOptions:
-    baseImage: docker.io/brunobordiga1/aodsource_docker_hub_tag_teste:latest@sha256:721fb6ba8fed44fb0649eee0dd72349868784204489a517d38341ce1f8b587d7
-  connectorSubtype: api
+    baseImage: docker.io/brunobordiga1/aodsource_docker_hub_tag_teste:latest@sha256:2455990619d461f8821f9fc5722a96b2092aaf2a9cd399d0c33ba2201c06d755
   connectorType: source
   definitionId: ad892544-ad53-4d4d-baa6-c7f5ed47a683
   dockerImageTag: 0.0.1
