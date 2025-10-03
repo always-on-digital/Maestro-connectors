@@ -4,7 +4,7 @@ data:
   connectorType: source
   definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
   dockerImageTag: "0.1.0"
-  dockerRepository: docker.io/aodigital/source_lojas_integradas:latest@sha256:7698f27464ed089d7456c0ecf43a080ab03abb42808b492ba09e4039dddaccca
+  dockerRepository: docker.io/aodigital/source_lojas_integradas:latest@sha256:431b070f6ed0fabf7d683b1af01963d2bfb060f4d12acfbc8699d6e7b54debbc
   githubIssueLabel: "source-lojas-integradas"
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
   license: MIT
