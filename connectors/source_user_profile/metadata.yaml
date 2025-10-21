@@ -1,0 +1,25 @@
+metadataSpecVersion: "1.0"
+data:
+  connectorSubtype: api
+  connectorType: source
+  definitionId: "aee6fee0-849f-478c-b419-4893a1b91378" # Substitua por um UUID único se necessário
+  dockerImageTag: "0.1.0"
+  dockerRepository: docker.io/brunobordiga/aod_source_user_profile:latest@sha256:c301b2b098198b1efef3e564072b2bef57ebe7f3010debf5fa2e590ec4a29810
+  icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
+  license: MIT
+  name: "User Profile"
+  releaseStage: alpha
+  documentationUrl: "https://api.awsli.com.br/v1/docs/"
+  supportUrl: "https://github.com/minha-org/source-user-profile/issues"
+  tags:
+    - user profile
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: false
+  releases:
+    breakingChanges:
+      0.2.0:
+        message: "Exemplo de breaking change futura"
+        upgradeDeadline: "2025-12-31"
