@@ -1,0 +1,28 @@
+metadataSpecVersion: "1.0"
+data:
+  connectorSubtype: api
+  connectorType: source
+  definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
+  dockerImageTag: "0.1.0"
+  dockerRepository: docker.io/aodigital/source_dbt:latest@sha256:66194bba2b7398f5db2f344afefecc7b93e52304dcac9bb429c3a0f722568fa3
+  icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
+  license: MIT
+  name: "Dbt"
+  releaseStage: alpha
+  documentationUrl: "https://api.awsli.com.br/v1/docs/"
+  supportUrl: "https://github.com/minha-org/source-dbt/issues"
+  tags:
+    - dbt
+    - github
+    - database
+    - api
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: false
+  releases:
+    breakingChanges:
+      0.2.0:
+        message: "Exemplo de breaking change futura"
+        upgradeDeadline: "2025-12-31"
