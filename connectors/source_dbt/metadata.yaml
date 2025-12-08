@@ -4,7 +4,7 @@ data:
   connectorType: source
   definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
   dockerImageTag: "0.1.0"
-  dockerRepository: docker.io/aodigital/source_dbt:latest@sha256:66194bba2b7398f5db2f344afefecc7b93e52304dcac9bb429c3a0f722568fa3
+  dockerRepository: docker.io/aodigital/source_dbt:latest@sha256:3a1c6eccd6f14ae9f2976ee1e994f4d01b96f85b144dc62076ef76fdf316f47e
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
   license: MIT
   name: "Dbt"
