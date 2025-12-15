@@ -2,20 +2,24 @@ metadataSpecVersion: "1.0"
 data:
   connectorSubtype: api
   connectorType: source
-  definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
+  definitionId: "5ad87b48-87fe-4dac-8e3a-c9f9d66d0723" # Substitua por um UUID único se necessário
   dockerImageTag: "0.1.0"
-  dockerRepository: docker.io/aodigital/source_dbt:latest@sha256:609818f4b4d2a086f21f975ceedd923b8eb4ff8a1a3fd0d6bdc202a05a5de0b8
+  dockerRepository: docker.io/aodigital/source_responsys_events:latest@sha256:77a3a35472da34fdc16e2d807728fac165d517598136cf332fd100e416e585f7
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
   license: MIT
-  name: "Dbt"
+  name: "Responsys Events"
   releaseStage: alpha
   documentationUrl: "https://api.awsli.com.br/v1/docs/"
-  supportUrl: "https://github.com/minha-org/source-dbt/issues"
+  supportUrl: "https://github.com/minha-org/source_responsys_events/issues"
   tags:
-    - dbt
-    - github
-    - database
-    - api
+    - responsys
+    - events
+    - connector
+    - email
+    - sms
+    - push
+    - web_push
+    - sftp
   registries:
     oss:
       enabled: true
