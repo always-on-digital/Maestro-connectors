@@ -1,0 +1,77 @@
+data:
+  ab_internal:
+    ql: 400
+    sl: 300
+  allowedHosts:
+    hosts:
+      - ${host}
+      - ${tunnel_method.tunnel_host}
+  connectorSubtype: database
+  connectorType: source
+  definitionId: 92bb74f8-78f5-4ca8-a162-a64e1806d7fa
+  dockerImageTag: 3.7.0
+  dockerRepository: anselmoalwayson/source-postgres
+  documentationUrl: https://docs.airbyte.com/integrations/sources/postgres
+  githubIssueLabel: source-postgres
+  icon: icon.svg
+  license: ELv2
+  maxSecondsBetweenMessages: 7200
+  name: Postgres
+  registryOverrides:
+    cloud:
+      enabled: true
+    oss:
+      enabled: true
+  releaseStage: generally_available
+  supportLevel: certified
+  tags:
+    - language:java
+  connectorBuildOptions:
+    baseImage: docker.io/anselmoalwayson/source-postgres:latest@sha256:21d76138897787330921cb38c25b88118e2ab60ac81f47c6480adfe0d4a63bf0
+  connectorTestSuitesOptions:
+    - suite: unitTests
+    - suite: integrationTests
+      testSecrets:
+        - name: SECRET_SOURCE-POSTGRES_CDC__CREDS
+          fileName: config_cdc.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+        - name: SECRET_SOURCE-POSTGRES__CREDS
+          fileName: config.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+        - name: SECRET_SOURCE_POSTGRES_PERFORMANCE_TEST_CREDS
+          fileName: performance-config.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+    - suite: acceptanceTests
+      testSecrets:
+        - name: SECRET_SOURCE-POSTGRES_CDC__CREDS
+          fileName: config_cdc.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+        - name: SECRET_SOURCE-POSTGRES__CREDS
+          fileName: config.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+        - name: SECRET_SOURCE_POSTGRES_PERFORMANCE_TEST_CREDS
+          fileName: performance-config.json
+          secretStore:
+            type: GSM
+            alias: airbyte-connector-testing-secret-store
+  externalDocumentationUrls:
+    - title: PostgreSQL documentation
+      url: https://www.postgresql.org/docs/
+      type: api_reference
+    - title: Release Notes
+      url: https://www.postgresql.org/docs/release/
+      type: api_release_history
+    - title: PostgreSQL authentication
+      url: https://www.postgresql.org/docs/current/auth-methods.html
+      type: authentication_guide
+metadataSpecVersion: "1.0"
