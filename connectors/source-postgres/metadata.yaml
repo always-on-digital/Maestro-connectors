@@ -8,12 +8,12 @@ data:
       - ${tunnel_method.tunnel_host}
   connectorSubtype: database
   connectorType: source
-  definitionId: 92bb74f8-78f5-4ca8-a162-a64e1806d7fa
-  dockerImageTag: 3.7.0
-  dockerRepository: anselmoalwayson/source-postgres
+  definitionId: 61572ac2-c6ec-43f4-a930-1dadc9036a70
+  dockerImageTag: latest
+  dockerRepository: brunobordiga/source-postgres
   documentationUrl: https://docs.airbyte.com/integrations/sources/postgres
   githubIssueLabel: source-postgres
-  icon: icon.svg
+  icon: postgresql.svg
   license: ELv2
   maxSecondsBetweenMessages: 7200
   name: Postgres
@@ -27,7 +27,7 @@ data:
   tags:
     - language:java
   connectorBuildOptions:
-    baseImage: docker.io/anselmoalwayson/source-postgres:latest@sha256:21d76138897787330921cb38c25b88118e2ab60ac81f47c6480adfe0d4a63bf0
+    baseImage: docker.io/airbyte/java-connector-base:2.0.1@sha256:ec89bd1a89e825514dd2fc8730ba299a3ae1544580a078df0e35c5202c2085b3
   connectorTestSuitesOptions:
     - suite: unitTests
     - suite: integrationTests
