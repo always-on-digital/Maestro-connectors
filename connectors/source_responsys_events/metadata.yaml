@@ -4,7 +4,7 @@ data:
   connectorType: source
   definitionId: "5ad87b48-87fe-4dac-8e3a-c9f9d66d0723" # Substitua por um UUID único se necessário
   dockerImageTag: "0.1.0"
-  dockerRepository: docker.io/aodigital/source_responsys_events:latest@sha256:ba8a04f23f82053624b852dbeba97c876fc7d588c311c66a966a55a50239d5c4
+  dockerRepository: docker.io/aodigital/source_responsys_events:latest@sha256:3a83a69425675704488cd12de318da9f6b593c6b12be10e6986ed9b314baf862
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
   license: MIT
   name: "Responsys Events"
