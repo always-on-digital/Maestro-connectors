@@ -9,11 +9,11 @@ data:
   connectorSubtype: database
   connectorType: source
   definitionId: 61572ac2-c6ec-43f4-a930-1dadc9036a70
-  dockerImageTag: latest
-  dockerRepository: brunobordiga/source-postgres
+  dockerImageTag: 2.0.34
+  dockerRepository: aodigital/source-postgres
   documentationUrl: https://docs.airbyte.com/integrations/sources/postgres
   githubIssueLabel: source-postgres
-  icon: postgresql.svg
+  icon: icon.svg
   license: ELv2
   maxSecondsBetweenMessages: 7200
   name: Postgres
