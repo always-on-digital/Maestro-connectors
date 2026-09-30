@@ -1,0 +1,33 @@
+metadataSpecVersion: "1.0"
+data:
+  connectorSubtype: api
+  connectorType: source
+  definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
+  dockerImageTag: "0.1.0"
+  dockerRepository: docker.io/aodigital/source_solutto:latest@sha256:c224535f5231d2851fbcfd4351fdd015f2e0b032cc3b48899e179b250a1bf4d2
+  icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
+  license: MIT
+  name: "Lojas Integradas"
+  releaseStage: alpha
+  documentationUrl: "https://api.awsli.com.br/v1/docs/"
+  supportUrl: "https://github.com/minha-org/source-solutto/issues"
+  tags:
+   - clientes
+   - contas_pagar
+   - contas_receber
+   - fornecedores
+   - produtos
+   - vendas
+   - investidores
+   - solutto
+   - api
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: false
+  releases:
+    breakingChanges:
+      0.2.0:
+        message: "Exemplo de breaking change futura"
+        upgradeDeadline: "2025-12-31"
