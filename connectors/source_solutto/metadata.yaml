@@ -7,7 +7,7 @@ data:
   dockerRepository: docker.io/aodigital/source_solutto:latest@sha256:c224535f5231d2851fbcfd4351fdd015f2e0b032cc3b48899e179b250a1bf4d2
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
   license: MIT
-  name: "Lojas Integradas"
+  name: "Solutto"
   releaseStage: alpha
   documentationUrl: "https://api.awsli.com.br/v1/docs/"
   supportUrl: "https://github.com/minha-org/source-solutto/issues"
