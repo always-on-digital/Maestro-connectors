@@ -2,7 +2,7 @@ metadataSpecVersion: "1.0"
 data:
   connectorSubtype: api
   connectorType: source
-  definitionId: "5904bc86-f667-4af3-b6e1-d0a9e6261363" # Substitua por um UUID único se necessário
+  definitionId: "35b88ce1-b861-4e5b-898d-56bf09c6bbf0" # Substitua por um UUID único se necessário
   dockerImageTag: "0.1.0"
   dockerRepository: docker.io/aodigital/source_dbt:latest@sha256:008cc2bffdb7904f0514e5aa0ca2ce136434902409ee0c94d769a366b4b23954
   icon: "icon.svg" # Se quiser, pode adicionar um ícone aqui na pasta "icons"
